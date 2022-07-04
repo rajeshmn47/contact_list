@@ -24,13 +24,13 @@ function App() {
           }
           getusers()
   },[])
-  let z='4'
+  var z='4'
   const firstletter=(str)=>{
 if(!(z===str)){
   console.log(str,z,str===z)
   z=str
   console.log(str,z,str===z)
-  return z;
+  return 1;
 }
   else{
     console.log('rajesh')
