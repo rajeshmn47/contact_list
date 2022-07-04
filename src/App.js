@@ -26,7 +26,7 @@ function App() {
   },[])
   var z='A'
   const firstletter=(str)=>{
-if((z===str)){
+if(z===str){
   console.log(str,z,str===z)
   z=str
   console.log(str,z,str===z)
