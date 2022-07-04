@@ -71,7 +71,7 @@ const onscroll = () => {
    {users&&users.map((u)=><>
    <div className='contact' key={u.name.first}>
     <h1 style={{color:'red'}} key={u.name.last}>{firstletter(u.name.first[0])}</h1>
-   <h5 key={u.name.first}>{u.name.first} {u.name.last+u.name.last}</h5>
+   <h5 key={u.name.first+u.name.last}>{u.name.first} {u.name.last}</h5>
    <img key={u.name.first+u.picture.thumbnail} src={u.picture.thumbnail} alt='' width='40' style={{borderRadius:'50%'}}/>
    </div>
    </>)}
