@@ -30,7 +30,7 @@ if(!(z===str)){
   console.log(str,z,str===z)
   z=str
   console.log(str,z,str===z)
-  return z
+  return 1;
 }
   else{
   return null;
