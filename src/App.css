@@ -9,6 +9,7 @@
 .contacts{
   background-color: #fafafa;
   padding: 2vmax;
+  overflow-y: scroll;
 }
 .topbar{
   display: flex;

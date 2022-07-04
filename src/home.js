@@ -56,18 +56,18 @@ const onscroll = () => {
   };
   return (
     <div >
-   <div className='topbar'>
-    <div className='topbar'>
+   <div className='topbar' >
+    <div className='topbar'  >
    <MenuIcon/>
    <h5 style={{display:'flex',alignItems:'center',marginLeft:'1vw'}}>All <ArrowDropDownIcon/></h5>
    </div>
-   <div className='topbar'>
+   <div className='topbar'  >
   <SearchIcon style={{marginRight:'1vw'}}/>
   <button className='logout' onClick={()=>navigate('/')}>Logout</button>
   <MoreVertIcon/>
   </div>
   </div>
-   <div className='contacts'  onScroll={()=>onscroll()} ref={listInnerRef}>
+   <div className='contacts'  ref={listInnerRef} onScroll={()=>onscroll()}>
    {users&&users.map((u)=><>
    <div className='contact' key={u.name.first}>
     <h1 style={{color:'red'}} key={u.name.last}>{firstletter(u.name.first[0])}</h1>
@@ -75,9 +75,10 @@ const onscroll = () => {
    <img key={u.name.first+u.picture.thumbnail} src={u.picture.thumbnail} alt='' width='40' style={{borderRadius:'50%'}}/>
    </div>
    </>)}
+   </div>
    {Loading&&<Skelton />}
 
-   </div>
+ 
     </div>
   );
 }
