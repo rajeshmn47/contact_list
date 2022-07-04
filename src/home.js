@@ -8,6 +8,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Skeleton from '@mui/material/Skeleton';
+import Skelton from './skeleton'
 
 
 function Home() {  
@@ -58,7 +59,7 @@ if(!(z===str)){
    <h5>{u.name.first} {u.name.last}</h5>
    <img src={u.picture.thumbnail} alt='' width='40' style={{borderRadius:'50%'}}/>
    </div>
-   </>):<Skeleton />
+   </>):<Skelton />
 }
    </div>
     </div>
