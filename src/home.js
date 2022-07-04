@@ -9,9 +9,11 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Skeleton from '@mui/material/Skeleton';
 import Skelton from './skeleton'
+import {useNavigate} from 'react-router-dom'
 
 
 function Home() {  
+    const navigate=useNavigate()
   const[users,setUsers]=useState()
   useEffect(()=>{
     async function getusers(){
@@ -49,6 +51,7 @@ if(!(z===str)){
    </div>
    <div className='topbar'>
   <SearchIcon style={{marginRight:'1vw'}}/>
+  <button className='logout' onClick={()=>navigate('/')}>Logout</button>
   <MoreVertIcon/>
   </div>
   </div>
