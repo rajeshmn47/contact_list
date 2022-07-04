@@ -55,7 +55,7 @@ const onscroll = () => {
     }
   };
   return (
-    <div  onScroll={onscroll} ref={listInnerRef}>
+    <div >
    <div className='topbar'>
     <div className='topbar'>
    <MenuIcon/>
@@ -67,7 +67,7 @@ const onscroll = () => {
   <MoreVertIcon/>
   </div>
   </div>
-   <div className='contacts'>
+   <div className='contacts'  onScroll={()=>onscroll()} ref={listInnerRef}>
    {users&&users.map((u)=><>
    <div className='contact' key={u.name.first}>
     <h1 style={{color:'red'}} key={u.name.last}>{firstletter(u.name.first[0])}</h1>
