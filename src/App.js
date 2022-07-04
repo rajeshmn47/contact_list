@@ -24,15 +24,16 @@ function App() {
           }
           getusers()
   },[])
-  var z='A'
+  let z='4'
   const firstletter=(str)=>{
 if(!(z===str)){
   console.log(str,z,str===z)
   z=str
   console.log(str,z,str===z)
-  return 1;
+  return z;
 }
   else{
+    console.log('rajesh')
   return null;
   }
 }
@@ -52,7 +53,7 @@ if(!(z===str)){
    <div className='contacts'>
    {users&&users.map((u)=><>
    <div className='contact'>
-    <h5 style={{color:'red'}}>{firstletter(u.name.first[0])&&firstletter(u.name.first[0])}</h5>
+    <h1 style={{color:'red'}}>{firstletter(u.name.first[0])}</h1>
    <h5>{u.name.first} {u.name.last}</h5>
    <img src={u.picture.thumbnail} alt='' width='40' style={{borderRadius:'50%'}}/>
    </div>
